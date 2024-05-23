@@ -1,0 +1,70 @@
+/* styles.css */
+
+.root {
+    -fx-font-family: "Arial";
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-background-color: #1d2d5e;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #1d2d5e;
+}
+
+.table-view {
+    -fx-border-color: #1d2d5e;
+    -fx-border-width: 1;
+}
+
+.label {
+    -fx-font-size: 16px;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+}
+
+.hbox {
+    -fx-spacing: 10;
+}
+
+.vbox {
+    -fx-spacing: 15;
+    -fx-alignment: center;
+}
+
+.context-menu {
+    -fx-background-color: #637bc0;
+    -fx-text-fill: black;
+}
+/* styles.css */
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-font-size: 16px;
+    -fx-pref-width: 200px;
+}
+
+.login-button, .register-button {
+    -fx-background-color: #1d2d5e;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-pref-width: 120px;
+}
+
+.login-button:hover, .register-button:hover {
+    -fx-background-color: #2d3d6e;
+}
+
+.message-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: red;
+}

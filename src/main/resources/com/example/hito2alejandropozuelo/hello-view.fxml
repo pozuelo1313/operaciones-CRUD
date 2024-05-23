@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.hito2alejandropozuelo.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<VBox alignment="CENTER" prefHeight="503.0" prefWidth="648.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hito2alejandropozuelo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <TableView fx:id="tv_datos" prefHeight="213.0" prefWidth="526.0">
+        <columns>
+            <TableColumn fx:id="col_nombre" prefWidth="144.0" text="Nombre" />
+            <TableColumn fx:id="col_ciudad" prefWidth="129.0" text="Ciudad" />
+            <TableColumn fx:id="col_facturacion" prefWidth="185.0" text="Facturación" />
+        </columns>
+    </TableView>
+    <Label fx:id="welcomeText" />
+    <HBox spacing="10.0">
+        <Label prefHeight="17.0" prefWidth="102.0" text="Nombre:" />
+        <TextField fx:id="tf_nombre" prefWidth="150.0" />
+    </HBox>
+    <HBox spacing="10.0">
+        <Label prefHeight="17.0" prefWidth="102.0" text="Ciudad:" />
+        <TextField fx:id="tf_ciudad" prefWidth="150.0" />
+    </HBox>
+    <HBox spacing="10.0">
+        <Label prefHeight="17.0" prefWidth="102.0" text="Facturación:" />
+        <TextField fx:id="tf_facturacion" prefWidth="150.0" />
+    </HBox>
+    <Button fx:id="btn_agregar" prefHeight="39.0" prefWidth="118.0" text="Agregar">
+      <effect>
+         <Blend />
+      </effect>
+   </Button>
+    <HBox alignment="BOTTOM_LEFT" spacing="10.0" />
+     <TextField fx:id="tf_buscar" prefWidth="150.0" promptText="Buscar cliente" />
+     <Button fx:id="btn_buscar" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
 </VBox>
